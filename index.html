@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link rel="stylesheet" href="style/index.css">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+</head>
+
+<body>
+
+  <script async type="text/javascript" src="index.js"></script>
+
+  <div id=top-bar>
+    <div id=name>
+      <h2>NORMAN ASSING</h2>
+    </div>
+
+    <div id=title>
+      <h1>PORTFOLIO</h1>
+    </div>
+
+    <div id=icons>
+      <div id=projects-menu onclick="toggleProjects()">projects</div></a>
+      <a href="https://linkedin.com/in/norman-assing/" target="_blank"><div id=linkedin>linkedin</div></a>
+      <a href="mailto:norman.assing@hotmail.com"><div id=contact>contact me</div></a>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="grid">
+      <div class="grid-item-wrapper" id="tn">
+        <div class="grid-item" onclick="rotateItem('tn')">
+          <h3>Education</h3>
+          <p>2021-2024: Télécom Nancy, Grande École, France</p>
+          <p>2020-2021: Centre International de Valbonne, CPGE, France</p>
+          <p>2018-2020: Lycée La Salle Saint-Charles, CPGE, France</p>
+        </div>
+        <div class="grid-item back" onclick="rotateItemBack('tn')">
+          <h3>Courses taken</h3>
+          <p>AI, cybersecurity, design patterns, parallel computing, blockchain, management, accounting</p>
+        </div>
+      </div>
+      <div class="grid-item-wrapper" id="kleps">
+        <div class="grid-item" onclick="rotateItem('kleps')">
+          <h3>Kleps</h3>
+          <p>Kleps is a social media platform based on vocal messages that promotes local democracy. I had the opportunity to work on this project and contribute to its development.</p>
+        </div>
+        <div class="grid-item back" onclick="rotateItemBack('kleps')">
+          <h3>Project Details</h3>
+          <ul>
+            <li>Designed and developed the platform's front-end using React and SASS</li>
+            <li>Integrated the back-end functionalities using Flask and APIs</li>
+            <li>Collaborated with a team of developers to deliver high-quality code</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-item-wrapper" id="flopple">
+        <div class="grid-item" onclick="rotateItem('flopple')">
+          <h3>Flopple</h3>
+          <p>Flopple is a parody of the popular game Wordle, based on the meme "Big Floppa". It was a fun project to work on and helped me improve my coding skills.</p>
+        </div>
+        <div class="grid-item back" onclick="rotateItemBack('flopple')">
+          <h3>Wordle Solver</h3>
+          <p>As part of the Flopple project, I also developed an efficient Wordle solver in C, which allowed users to quickly find the solutions to the puzzles.</p>
+          <div id="flopple-img">
+            <img src="media/c.png" alt="C programming language logo">
+          </div>
+        </div>
+      </div>
+      <div class="grid-item-wrapper" id="webdev">
+        <div class="grid-item" onclick="rotateItem('webdev')">
+          <h3>Web Development</h3>
+          <p>I have experience in developing web applications using a variety of technologies, including Flask, APIs, React, Vue, and SASS.</p>
+          <div id="webdev-img">
+            <img src="media/react.png">
+            <img src="media/flask.png">
+            <img src="media/sass.png">
+          </div>
+        </div>
+        <div class="grid-item back" onclick="rotateItemBack('webdev')">
+          <h3>Web Development Projects</h3>
+          <p>Here are some examples of my web development work:</p>
+          <ul>
+            <li>Developed a social media platform based on vocal messages with Flask</li>
+            <li>Created a web app where you listen to random videos and write down what was said using React</li>
+            <li>Maintained FormuTools, a Vue project that allows cosmetic products formulation.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-item-wrapper" id="dev">
+        <div class="grid-item" onclick="rotateItem('dev')">
+          <h3>Software Development</h3>
+          <p>I have experience in using several programming languages, including Python, C, Java, and Unity, to develop software applications and games.</p>
+          <div id="dev-img">
+            <img src="media/python.png" alt="Python programming language logo">
+            <img src="media/c.png" alt="C programming language logo">
+            <img src="media/java.png" alt="Java programming language logo">
+            <img src="media/unity.png" alt="Unity game engine logo">
+          </div>
+        </div>
+        <div class="grid-item back" onclick="rotateItemBack('dev')">
+          <h3>Software Development Projects</h3>
+          <p>Here are some examples of my software development work:</p>
+          <ul>
+            <li>I recreacted the "find" function in C</li>
+            <li>I made a flashcard app using JavaFX and design patterns</li>
+            <li>I developed a Tiger analyzer with Antlr</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-item-wrapper" id="devOps">
+        <div class="grid-item" onclick="rotateItem('devOps')">
+          <h3>DevOps</h3>
+          <p>I have experience in setting up and managing web servers, including hosting websites and configuring server software.</p>
+          <div id="devOps-img">
+            <img src="media/cloudflare.png" alt="Cloudflare logo">
+            <img src="media/gunicorn.png" alt="Gunicorn logo">
+            <img src="media/apache.png" alt="Apache HTTP server logo">
+          </div>
+        </div>
+        <div class="grid-item back" onclick="rotateItemBack('devOps')">
+          <h3>Raspberry Pi</h3>
+          <p>I am currently self-hosting this portfolio website on a Raspberry Pi, which has allowed me to gain valuable experience in server administration and management.</p>
+          <div id="raspberryPi-img">
+            <img src="media/raspberry.png" alt="Raspberry Pi logo">
+          </div>
+        </div>
+      </div>
+      <div class="grid-item-wrapper" id="tns">
+        <div class="grid-item" onclick="rotateItem('tns')">
+          <h3>Human Resources</h3>
+          <p>I have a keen interest in human resources and enjoy learning about talent management, recruitment, and team engagement.</p>
+        </div>
+        <div class="grid-item back" onclick="rotateItemBack('tns')">
+          <h3>TNS - Head of HR</h3>
+          <p>During my time at TNS, I served as the Head of Human Resources, where I was responsible for the recruitment. I also supervised the training of the candidates and fostered high morale among team members through engaging team-building events and activities.</p>
+        </div>
+      </div>
+    </div>
+      </div>
+      <footer>
+        <p>Thank you for visiting my portfolio website. If you have any questions or would like to connect, feel free to reach out to me via email or LinkedIn.</p>
+      </footer>
+    </div>
+  <div id=cookies onclick="closeCookies()">
+    <p>🍪</p>
+    <p>This website does not use cookies or your data for commercial purposes</p>
+  </div>
+  <div id=projects-wrapper onclick="toggleProjects()" style="visibility: hidden;">
+    <div id=projects>
+      <div class=project-item id=projects-kleps>
+        <a href="https://kleps.nassing.tk" target="_blank">
+          <p>Kleps</p>
+          <img src="media/kleps.png"/>
+        </a>
+      </div>
+      <div class=project-item id=projects-flopple>
+        <a href="https://flopple.nassing.tk" target="_blank">
+          <p>Flopple</p>
+          <img src="media/flopple.png" style="width: 10rem;"/>
+        </a>
+      </div>
+      <div class=project-item id=projects-yousub>
+        <a href="https://yousub.nassing.tk" target="_blank">
+          <p>yousub</p>
+          <img src="media/yousub.png" style="width: 10rem;"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
