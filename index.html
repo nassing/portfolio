@@ -3,6 +3,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
   <link rel="stylesheet" href="style/index.css">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
   <meta http-equiv="Pragma" content="no-cache"/>
@@ -23,9 +24,14 @@
     </div>
 
     <div id=icons>
+      <a href="https://github.com/nassing" target="_blank"><div id=github>github</div></a>
       <div id=projects-menu onclick="toggleProjects()">projects</div></a>
       <a href="https://linkedin.com/in/norman-assing/" target="_blank"><div id=linkedin>linkedin</div></a>
       <a href="mailto:norman.assing@hotmail.com"><div id=contact>contact me</div></a>
+    </div>
+
+    <div id=burger-menu>
+      <img src="media/burger.png" alt="Burger menu icon">
     </div>
   </div>
 
@@ -34,9 +40,9 @@
       <div class="grid-item-wrapper" id="tn">
         <div class="grid-item" onclick="rotateItem('tn')">
           <h3>Education</h3>
-          <p>2021-2024: Télécom Nancy, Grande École, France</p>
-          <p>2020-2021: Centre International de Valbonne, CPGE, France</p>
-          <p>2018-2020: Lycée La Salle Saint-Charles, CPGE, France</p>
+          <p>2023-2024: IAE Nancy</p>
+          <p>2021-2024: Télécom Nancy</p>
+          <p>2018-2021: CPGE</p>
         </div>
         <div class="grid-item back" onclick="rotateItemBack('tn')">
           <h3>Courses taken</h3>
@@ -45,16 +51,17 @@
       </div>
       <div class="grid-item-wrapper" id="kleps">
         <div class="grid-item" onclick="rotateItem('kleps')">
-          <h3>Kleps</h3>
-          <p>Kleps is a social media platform based on vocal messages that promotes local democracy. I had the opportunity to work on this project and contribute to its development.</p>
+          <h3>Hi !</h3>
+          <!-- <p>Kleps is a social media platform based on vocal messages that promotes local democracy. I had the opportunity to work on this project and contribute to its development.</p> -->
+          <p></p>
+          <p>Welcome to my portfolio.</p>
+          <p>Here you can find my projects in the top right corner and more information about myself all around this message.</p>
+          <p>Click on any card to flip it and see more information. You should check out yousub, it is my latest React.js project !</p>
         </div>
         <div class="grid-item back" onclick="rotateItemBack('kleps')">
-          <h3>Project Details</h3>
-          <ul>
-            <li>Designed and developed the platform's front-end using React and SASS</li>
-            <li>Integrated the back-end functionalities using Flask and APIs</li>
-            <li>Collaborated with a team of developers to deliver high-quality code</li>
-          </ul>
+          <h3>You did it !</h3>
+          <p>Yep, you flipped the card.</p>
+          <p>Now try doing that with all the other ones !</p>
         </div>
       </div>
       <div class="grid-item-wrapper" id="flopple">
@@ -135,7 +142,7 @@
           <p>I have a keen interest in human resources and enjoy learning about talent management, recruitment, and team engagement.</p>
         </div>
         <div class="grid-item back" onclick="rotateItemBack('tns')">
-          <h3>TNS - Head of HR</h3>
+          <h3>Business Management</h3>
           <p>During my time at TNS, I served as the Head of Human Resources, where I was responsible for the recruitment. I also supervised the training of the candidates and fostered high morale among team members through engaging team-building events and activities.</p>
         </div>
       </div>
@@ -148,6 +155,7 @@
   <div id=cookies onclick="closeCookies()">
     <p>🍪</p>
     <p>This website does not use cookies or your data for commercial purposes</p>
+    <p>x</p>
   </div>
   <div id=projects-wrapper onclick="toggleProjects()" style="visibility: hidden;">
     <div id=projects>
