@@ -152,6 +152,7 @@ body
                         gap: 1rem
                         img
                             height: 4.5rem
+                            max-width: 10rem
             #dev
                 grid-area: 1 / 3 / 2 / 5
                 .grid-item
@@ -191,6 +192,7 @@ body
                         gap: 1rem
                         img
                             width: 12vw
+                            border-radius: 10px
     #cookies
         position: fixed
         bottom: 3rem
@@ -214,6 +216,8 @@ body
         display: flex
         justify-content: center
         margin-top: 3rem
+        padding-left: 2rem
+        padding-right: 2rem
     #projects-wrapper
         position: absolute
         height: 95vh
@@ -243,6 +247,33 @@ body
                     img
                         width: 5rem
                         border-radius: 10px
+    #mobile-menu
+        background: #FAFAFA
+        position: absolute
+        height: 100%
+        width: 100%
+        top: 3.5rem
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+        padding-top: 4rem
+        gap: 4rem
+        .mobile-menu-item
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            border-bottom: 0.06rem solid #191919
+            width: 100%
+            height: 2rem
+            a,p
+                font-family: "EB Garamond"
+                font-size: 2rem
+                color: black
+                &:hover
+                    color: black
+                    cursor: pointer
+
 
 @media (max-width: 1264px)
     body #main
@@ -257,9 +288,7 @@ body
             .grid-item-wrapper
                 width: 95%
 
-@media (max-width: 800px)
-    h2
-        font-size: 1.3rem
+@media (max-width: 840px)
     #icons
         display: none!important
     #burger-menu

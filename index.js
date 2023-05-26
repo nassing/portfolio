@@ -71,9 +71,21 @@ function showBackDivs() {
 
 function toggleProjects()
 {
-
     let div = document.getElementById("projects-wrapper");
     div.style.visibility = div.style.visibility == "hidden" ? "visible" : "hidden";
+}
+
+function toggleProjectsMobile()
+{
+    let div = document.getElementById("projects-wrapper");
+    div.style.visibility = div.style.visibility == "hidden" ? "visible" : "hidden";
+    toggleMobileMenu();
+}
+
+function toggleMobileMenu()
+{
+    let div = document.getElementById("mobile-menu");
+    div.style.display = div.style.display == "none" ? "flex" : "none";
 }
 
 if(getCookie("first_time") != null)

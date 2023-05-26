@@ -31,24 +31,12 @@
     </div>
 
     <div id=burger-menu>
-      <img src="media/burger.png" alt="Burger menu icon">
+      <img src="media/burger.png" alt="Burger menu icon" onclick="toggleMobileMenu()">
     </div>
   </div>
 
   <div id="main">
     <div id="grid">
-      <div class="grid-item-wrapper" id="tn">
-        <div class="grid-item" onclick="rotateItem('tn')">
-          <h3>Education</h3>
-          <p>2023-2024: IAE Nancy</p>
-          <p>2021-2024: Télécom Nancy</p>
-          <p>2018-2021: CPGE</p>
-        </div>
-        <div class="grid-item back" onclick="rotateItemBack('tn')">
-          <h3>Courses taken</h3>
-          <p>AI, cybersecurity, design patterns, parallel computing, blockchain, management, accounting</p>
-        </div>
-      </div>
       <div class="grid-item-wrapper" id="kleps">
         <div class="grid-item" onclick="rotateItem('kleps')">
           <h3>Hi !</h3>
@@ -62,6 +50,18 @@
           <h3>You did it !</h3>
           <p>Yep, you flipped the card.</p>
           <p>Now try doing that with all the other ones !</p>
+        </div>
+      </div>
+      <div class="grid-item-wrapper" id="tn">
+        <div class="grid-item" onclick="rotateItem('tn')">
+          <h3>Education</h3>
+          <p>2023-2024: IAE Nancy</p>
+          <p>2021-2024: Télécom Nancy</p>
+          <p>2018-2021: CPGE</p>
+        </div>
+        <div class="grid-item back" onclick="rotateItemBack('tn')">
+          <h3>Courses taken</h3>
+          <p>AI, cybersecurity, design patterns, parallel computing, blockchain, management, accounting</p>
         </div>
       </div>
       <div class="grid-item-wrapper" id="flopple">
@@ -177,6 +177,21 @@
           <img src="media/yousub.png" style="width: 10rem;"/>
         </a>
       </div>
+    </div>
+  </div>
+
+  <div id=mobile-menu style="display: none;">
+    <div class=mobile-menu-item>
+      <a href="https://github.com/nassing" target="_blank"><div id=mobile-menu-github>github</div></a>
+    </div>
+    <div class=mobile-menu-item>
+      <p id=mobile-menu-projects-menu onclick="toggleProjectsMobile()">projects</p>
+    </div>
+    <div class=mobile-menu-item>
+      <a href="https://linkedin.com/in/norman-assing/" target="_blank"><div id=mobile-menu-linkedin>linkedin</div></a>
+    </div>
+    <div class=mobile-menu-item>
+      <a href="mailto:norman.assing@hotmail.com"><div id=mobile-menu-contact>contact me</div></a>
     </div>
   </div>
 </body>
