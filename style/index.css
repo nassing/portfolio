@@ -40,7 +40,7 @@ p, li {
 
 body {
   font-family: Helvetica;
-  background: #A6FFF9;
+  background: #ffbfa6;
   color: #191919;
   display: flex;
   flex-direction: column;
@@ -97,13 +97,13 @@ body #top-bar #projects-menu:hover {
   transition: color 0.5s;
 }
 body #main {
-  margin-top: 4rem;
-  max-height: calc(100vh - 4rem);
+  margin-top: 5rem;
+  max-height: calc(100vh - 5rem);
   margin-right: 1rem;
   margin-left: 1rem;
 }
 body #main #grid {
-  max-height: calc(100vh - 5rem);
+  max-height: calc(100vh - 6rem);
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -155,11 +155,12 @@ body #main #grid .grid-item-wrapper .back {
 body #main #grid #tn {
   grid-area: 1/1/2/2;
 }
-body #main #grid #kleps {
+body #main #grid #intro {
   grid-area: 1/2/3/3;
 }
-body #main #grid #kleps div {
-  background: #f7fa34;
+body #main #grid #intro div {
+  background: #191919;
+  color: #FAFAFA;
 }
 body #main #grid #flopple {
   grid-area: 2/1/4/2;
@@ -356,5 +357,14 @@ body #mobile-menu .mobile-menu-item a:hover, body #mobile-menu .mobile-menu-item
   }
   #burger-menu {
     display: block !important;
+  }
+}
+@media (hover: none) {
+  #mobile-text {
+    display: block !important;
+  }
+  .grid-item-wrapper:hover {
+    transform: scale(100%) !important;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=index.css.map */
