@@ -88,6 +88,13 @@ function toggleMobileMenu()
     div.style.display = div.style.display == "none" ? "flex" : "none";
 }
 
+function backgroundAnimation(hue)
+{
+    console.log(hue);
+    document.body.style.setProperty('--hue', hue+1);
+    setTimeout(function(){backgroundAnimation(hue+1)}, 100);
+}
+
 if(getCookie("first_time") != null)
 {
     let div = document.getElementById("cookies");
@@ -95,3 +102,5 @@ if(getCookie("first_time") != null)
 }
 
 setCookie("first_time", "true");
+
+backgroundAnimation(17);
