@@ -26,6 +26,10 @@
 
     padding: 2rem;
 
+    min-width: 15rem;
+    width: 80vw;
+    max-width: 20rem;
+
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
@@ -35,9 +39,9 @@
 .contact-wrapper ul {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2.5rem;
 
-    padding: 0 3rem 0 0;
+    padding: 0 2rem 0 0.5rem;
 }
 
 .contact-wrapper .title {
@@ -47,13 +51,19 @@
     margin-bottom: 2.5rem;
 }
 
-.contact-wrapper li {
+.contact-wrapper li a {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
 .contact-wrapper img {
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
+}
+
+@media screen and (max-width: 430px) {
+    .contact-wrapper .mobile-hide {
+        display: none;
+    }
 }
