@@ -1,6 +1,6 @@
 - [x] Navbar
 - [x] Contact
-- [ ] Contact (JS)
+- [x] Contact (JS)
 - [ ] Add images
 - [ ] Landing Page
 
