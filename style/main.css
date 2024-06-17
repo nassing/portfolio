@@ -1,0 +1,57 @@
+.main {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: calc(100vh - 50px);
+}
+
+.main .title {
+    margin: 2rem 0 0 3rem;
+
+    font-size: 2em;
+    line-height: 0.5em;
+}
+
+.main .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.main .buttons button {
+    border: solid 3px black;
+    border-radius: 20px;
+
+    line-height: 0;
+
+    padding: 0 1rem 0 1rem; 
+}
+
+.main .buttons button:hover { 
+    background-color: gray;
+}
+
+@media screen and (max-width: 580px) {
+    .main .title {
+        margin: 2rem 0 0 1.8rem;
+    
+        font-size: 1.5em;
+        line-height: 0.5em;
+    }
+
+    .main .buttons {
+        justify-content: space-around;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .main .title {
+        margin: 2rem 0 0 1.2rem;
+    
+        font-size: 1em;
+        line-height: 0.5em;
+    }
+}
